@@ -10,9 +10,6 @@ const App: React.FC = () => {
         alts={"메인이미지야"}
         classname={"test"}
       />
-      <Divmaker classvalue={"card"}>
-        <Divmaker classvalue={"card-container"}></Divmaker>
-      </Divmaker>
     </div>
   );
 };

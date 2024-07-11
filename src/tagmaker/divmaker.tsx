@@ -1,7 +1,4 @@
-interface Indiv {
-  classvalue: string;
-  children?: React.ReactNode;
-}
+import { Indiv } from "../interface/useunterface";
 
 const Divmaker: React.FC<Indiv> = ({ classvalue, children }) => {
   return <div className={classvalue}>{children}</div>;
