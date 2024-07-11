@@ -1,10 +1,10 @@
 interface Indiv {
-  classvalue: string;
+  classname: string;
   children?: React.ReactNode;
 }
 
 interface Inhr {
-  classvalue: string;
+  classname: string;
 }
 
 interface ImgMakerPros {
@@ -13,4 +13,14 @@ interface ImgMakerPros {
   classname: string;
 }
 
-export { Indiv, Inhr, ImgMakerPros };
+interface Inh2 {
+  classname: string;
+  children: React.ReactNode;
+}
+
+interface Inp {
+  classname: string;
+  children: React.ReactNode;
+}
+
+export { Indiv, Inhr, ImgMakerPros, Inh2, Inp };

@@ -1,5 +1,5 @@
 import react from "react";
-import Imgmake from "./tagmaker/imgtagmaker";
+import Imgmake from "./tagmaker/imgmaker";
 import Divmaker from "./tagmaker/divmaker";
 
 const App: React.FC = () => {
