@@ -1,5 +1,6 @@
 import react from "react";
 import Imgmake from "./tagmaker/imgtagmaker";
+import Divmaker from "./tagmaker/divmaker";
 
 const App: React.FC = () => {
   return (
@@ -7,8 +8,11 @@ const App: React.FC = () => {
       <Imgmake
         srcs={"../img/backimage.jfif"}
         alts={"메인이미지야"}
-        calssname={"test"}
+        classname={"test"}
       />
+      <Divmaker classvalue={"card"}>
+        <Divmaker classvalue={"card-container"}></Divmaker>
+      </Divmaker>
     </div>
   );
 };

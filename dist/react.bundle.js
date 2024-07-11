@@ -16,7 +16,7 @@
   \*********************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar imgtagmaker_1 = __importDefault(__webpack_require__(/*! ./tagmaker/imgtagmaker */ \"./src/tagmaker/imgtagmaker.tsx\"));\nvar App = function App() {\n  return (0, jsx_runtime_1.jsx)(\"div\", {\n    children: (0, jsx_runtime_1.jsx)(imgtagmaker_1[\"default\"], {\n      srcs: \"../img/backimage.jfif\",\n      alts: \"메인이미지야\",\n      calssname: \"test\"\n    })\n  });\n};\nexports[\"default\"] = App;\n\n//# sourceURL=webpack://reacttest1/./src/app.tsx?");
+eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar imgtagmaker_1 = __importDefault(__webpack_require__(/*! ./tagmaker/imgtagmaker */ \"./src/tagmaker/imgtagmaker.tsx\"));\nvar divmaker_1 = __importDefault(__webpack_require__(/*! ./tagmaker/divmaker */ \"./src/tagmaker/divmaker.tsx\"));\nvar App = function App() {\n  return (0, jsx_runtime_1.jsxs)(\"div\", {\n    children: [(0, jsx_runtime_1.jsx)(imgtagmaker_1[\"default\"], {\n      srcs: \"../img/backimage.jfif\",\n      alts: \"메인이미지야\",\n      classname: \"test\"\n    }), (0, jsx_runtime_1.jsx)(divmaker_1[\"default\"], {\n      classvalue: \"card\",\n      children: (0, jsx_runtime_1.jsx)(imgtagmaker_1[\"default\"], {\n        srcs: \"../img/backimage.jfif\",\n        alts: \"메인이미지야\",\n        classname: \"test\"\n      })\n    })]\n  });\n};\nexports[\"default\"] = App;\n\n//# sourceURL=webpack://reacttest1/./src/app.tsx?");
 
 /***/ }),
 
@@ -30,13 +30,23 @@ eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {
 
 /***/ }),
 
+/***/ "./src/tagmaker/divmaker.tsx":
+/*!***********************************!*\
+  !*** ./src/tagmaker/divmaker.tsx ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Divmaker = function Divmaker(_ref) {\n  var classvalue = _ref.classvalue,\n    children = _ref.children;\n  return (0, jsx_runtime_1.jsx)(\"div\", {\n    className: classvalue,\n    children: children\n  });\n};\nexports[\"default\"] = Divmaker;\n\n//# sourceURL=webpack://reacttest1/./src/tagmaker/divmaker.tsx?");
+
+/***/ }),
+
 /***/ "./src/tagmaker/imgtagmaker.tsx":
 /*!**************************************!*\
   !*** ./src/tagmaker/imgtagmaker.tsx ***!
   \**************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Imgmake = function Imgmake(_ref) {\n  var srcs = _ref.srcs,\n    alts = _ref.alts,\n    calssname = _ref.calssname;\n  return (0, jsx_runtime_1.jsx)(\"img\", {\n    src: srcs,\n    alt: alts,\n    className: calssname\n  });\n};\nexports[\"default\"] = Imgmake;\n\n//# sourceURL=webpack://reacttest1/./src/tagmaker/imgtagmaker.tsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Imgmake = function Imgmake(_ref) {\n  var srcs = _ref.srcs,\n    alts = _ref.alts,\n    classname = _ref.classname;\n  return (0, jsx_runtime_1.jsx)(\"img\", {\n    src: srcs,\n    alt: alts,\n    className: classname\n  });\n};\nexports[\"default\"] = Imgmake;\n\n//# sourceURL=webpack://reacttest1/./src/tagmaker/imgtagmaker.tsx?");
 
 /***/ }),
 
