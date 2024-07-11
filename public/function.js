@@ -29,16 +29,6 @@ function makeelement(elementvalue) {
   return result;
 }
 
-let test = {
-  car: 자동차,
-  shop: 상점,
-  make: 만들다,
-};
-
-for (let vlaue in test) {
-  console.log(vlaue + ": " + test[vlaue]);
-}
-
 function makestyle(element, property, vlaue) {
   `${element}.style.${property} = "${vlaue}"`;
   `${element}.style.${property} = "${vlaue}"`;
