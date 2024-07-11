@@ -13,7 +13,7 @@ body {
   background: #d6c395;
 }
 
-#root-image {
+.root-image {
   position: absolute;
   width: 1956px;
   height: 1307px;
@@ -175,7 +175,7 @@ body {
   );
 }
 
-#vertical {
+.vertical {
   position: absolute;
   width: 10px;
   height: 532px;
@@ -183,7 +183,7 @@ body {
   top: 311px;
 }
 
-#vertical-dot {
+.vertical-dot {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -194,7 +194,7 @@ body {
   border-radius: 5px;
 }
 
-#vertical-line {
+.vertical-line {
   position: absolute;
   left: 88.85%;
   right: -11.72%;
