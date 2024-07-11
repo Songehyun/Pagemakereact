@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="public/markupstyle.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const root = document.getElementById("root");
+      document.body.style.overflowX = "hidden";
+      document.body.style.overflowY = "hidden";
+      root.style.position = "absolute";
+      root.style.width = "1920px";
+      root.style.height = "1080px";
+      root.style.left = "0px";
+      root.style.top = "0px";
+      root.style.background = "#d6c395";
+      const imagemake = document.createElement("img");
+      imagemake.style.position = "absolute";
+      imagemake.style.width = "1956px";
+      imagemake.style.height = "1307px";
+      imagemake.style.left = "-7px";
+      imagemake.style.top = "-134px";
+      imagemake.style.mixBlendMode = "multiply";
+      imagemake.src = "/img/backimage.jfif";
+      imagemake.alt = "메인이미지야";
+      root.appendChild(imagemake);
+      const cardonemake = document.createElement("div");
+      cardonemake.style.position = "absolute";
+      cardonemake.style.width = "1044px";
+      cardonemake.style.height = "487px";
+      cardonemake.style.left = "178px";
+      cardonemake.style.top = "340px";
+      root.appendChild(cardonemake);
+      const cardoneContainer = document.createElement("div");
+      cardoneContainer.style.boxSizing = "border-box";
+      cardoneContainer.style.position = "absolute";
+      cardoneContainer.style.left = "0%";
+      cardoneContainer.style.right = "0%";
+      cardoneContainer.style.top = "0%";
+      cardoneContainer.style.bottom = "0%";
+      cardoneContainer.style.background =
+        "linear-gradient(90deg, rgba(180, 165, 122, 0.3) 0%, rgba(214, 195, 149, 0.3) 100%)";
+      cardoneContainer.style.boxShadow = "1px 4px 15.6px -5px #574c31";
+      cardoneContainer.style.backdropFilter = "blur(29px)";
+      cardoneContainer.style.borderRadius = "31px";
+      cardonemake.appendChild(cardoneContainer);
+      const cardoneText = document.createElement("p");
+      cardoneText.style.position = "absolute";
+      cardoneText.style.left = "19.83%";
+      cardoneText.style.right = "2.97%";
+      cardoneText.style.top = "38.6%";
+      cardoneText.style.bottom = "4.52%";
+      cardoneText.style.fontFamily = '"Inter"';
+      cardoneText.style.fontStyle = "normal";
+      cardoneText.style.fontWeight = "400";
+      cardoneText.style.fontSize = "12px";
+      cardoneText.style.lineHeight = "15px";
+      cardoneText.style.textAlign = "justify";
+      cardoneText.style.color = "#23201a";
+      cardoneText.innerHTML =
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,corporis quasi consequatur tempore voluptas explicabo dolorem sedquam cupiditate ipsa non magnam delectus distinctio, nemo ratione,eligendi maxime molestiae quae.Lorem ipsum dolor sit ametconsectetur adipisicing elit. Ex, corporis quasi consequatur tempore  voluptas explicabo dolorem sed quam cupiditate ipsa non magnam delectus distinctio, nemo ratione, eligendi maxime molestiaequae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,corporis quasi consequatur tempore voluptas explicabo dolorem sedquam cupiditate ipsa non magnam delectus distinctio, nemo ratioeligendi maxime molestiae quae.Lorem ipsum dolor sit aconsectetur adipisicing elit. Ex, corporis quasi consequatur temporevoluptas explicabo dolorem sed quam cupiditate ipsa non magnadelectus distinctio, nemo ratione, eligendi maxime molesti quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,corporis quasi consequatur tempore voluptas explicabo dolorem sedquam cupiditate ipsa non magnam delectus distinctio, nemo ratione, eligendi maxime molestiae quae.Lorem ipsum dolor sit ame  consectetur adipisicing elit. Ex, corporis quasi consequatur tempore voluptas explicabo dolorem sed quam cupiditate ipsa non magnam delectus distinctio, nemo ratione, eligendi maxime molestiaequae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,corporis quasi consequatur tempore voluptas explicabo dolorem sedquam cupiditate ipsa non magnam delectus distinctio, nemo ratione, eligendi maxime molestiae quae.Lorem ipsum dolor sit ame  consectetur adipisicing elit. Ex, corporis quasi consequatur tempore voluptas explicabo dolorem sed quam cupiditate ipsa non magnamdelectus distinctio, nemo ratione, eligendi maxime molestiae quae.";
+      cardonemake.appendChild(cardoneText);
+      const cardoneLine = document.createElement("hr");
+      cardoneLine.style.position = "absolute";
+      cardoneLine.style.left = "54.98%";
+      cardoneLine.style.right = "2.97%";
+      cardoneLine.style.top = "24.23%";
+      cardoneLine.style.bottom = "75.36%";
+      cardoneLine.style.background =
+        "linear-gradient(90deg, rgba(210, 143, 67, 0.5) 0%, rgba(80, 47, 10, 0.5) 100%)";
+      cardonemake.appendChild(cardoneLine);
+      const cardoneTitle = document.createElement("h2");
+      cardoneTitle.style.position = "absolute";
+      cardoneTitle.style.left = "13.79%";
+      cardoneTitle.style.right = "45.4%";
+      cardoneTitle.style.top = "11.15%";
+      cardoneTitle.style.bottom = "63.04%";
+      cardoneTitle.style.fontFamily = '"Inter"';
+      cardoneTitle.style.fontStyle = "normal";
+      cardoneTitle.style.fontWeight = "400";
+      cardoneTitle.style.fontSize = "64px";
+      cardoneTitle.style.lineHeight = "77px";
+      cardoneTitle.style.textAlign = "justify";
+      cardoneTitle.style.color = "#23201a";
+      cardoneTitle.innerHTML = "INDENTATION";
+      cardonemake.appendChild(cardoneTitle);
+      const card2 = document.createElement("div");
+      card2.style.position = "absolute";
+      card2.style.width = "1044px";
+      card2.style.height = "487px";
+      card2.style.left = "178px";
+      card2.style.top = "866px";
+      root.appendChild(card2);
+      const cardContainer2 = document.createElement("div");
+      cardContainer2.style.boxSizing = "border-box";
+      cardContainer2.style.position = "absolute";
+      cardContainer2.style.left = "0%";
+      cardContainer2.style.right = "0%";
+      cardContainer2.style.top = "0%";
+      cardContainer2.style.bottom = "0%";
+      cardContainer2.style.background =
+        "linear-gradient(90deg, rgba(180, 165, 122, 0.3) 0%, rgba(214, 195, 149, 0.3) 100%)";
+      cardContainer2.style.boxShadow = "1px 4px 15.6px -5px #574c31";
+      cardContainer2.style.backdropFilter = "blur(29px)";
+      cardContainer2.style.borderRadius = "31px";
+      card2.appendChild(cardContainer2);
+      const cardText2 = document.createElement("p");
+      cardText2.style.position = "absolute";
+      cardText2.style.left = "19.83%";
+      cardText2.style.right = "2.97%";
+      cardText2.style.top = "38.6%";
+      cardText2.style.bottom = "4.52%";
+      cardText2.style.fontFamily = '"Inter"';
+      cardText2.style.fontStyle = "normal";
+      cardText2.style.fontWeight = "400";
+      cardText2.style.fontSize = "12px";
+      cardText2.style.lineHeight = "15px";
+      cardText2.style.textAlign = "justify";
+      cardText2.style.color = "#23201a";
+      cardText2.innerHTML =
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,corporis quasi consequatur tempore voluptas explicabo dolorem sed quam cupiditate ipsa non magnam delectus distinctio, nemo ratione,eligendi maxime molestia";
+      card2.appendChild(cardText2);
+      const cardTitle2 = document.createElement("h2");
+      cardTitle2.style.position = "absolute";
+      cardTitle2.style.left = "13.79%";
+      cardTitle2.style.right = "52.87%";
+      cardTitle2.style.top = "11.15%";
+      cardTitle2.style.bottom = "63.04%";
+      cardTitle2.style.fontFamily = '"Inter"';
+      cardTitle2.style.fontStyle = "normal";
+      cardTitle2.style.fontWeight = "400";
+      cardTitle2.style.fontSize = "64px";
+      cardTitle2.style.lineHeight = "77px";
+      cardTitle2.style.textAlign = "justify";
+      cardTitle2.style.color = "#23201a";
+      cardTitle2.innerHTML = "EXCLUSIVE";
+      card2.appendChild(cardTitle2);
+      const cardLine2 = document.createElement("hr");
+      cardLine2.style.position = "absolute";
+      cardLine2.style.left = "54.98%";
+      cardLine2.style.right = "2.97%";
+      cardLine2.style.top = "24.23%";
+      cardLine2.style.bottom = "75.36%";
+      cardLine2.style.background =
+        "linear-gradient(90deg, rgba(210, 143, 67, 0.5) 0%, rgba(80, 47, 10, 0.5) 100%)";
+      card2.appendChild(cardLine2);
+      const vertical = document.createElement("div");
+      vertical.style.position = "absolute";
+      vertical.style.width = "10px";
+      vertical.style.height = "532px";
+      vertical.style.left = "1699px";
+      vertical.style.top = "311px";
+      root.appendChild(vertical);
+      const verticalDot = document.createElement("div");
+      verticalDot.style.position = "absolute";
+      verticalDot.style.width = "10px";
+      verticalDot.style.height = "10px";
+      verticalDot.style.left = "1699px";
+      verticalDot.style.top = "833px";
+      verticalDot.style.background = "#977240";
+      verticalDot.style.borderRadius = "5px";
+      vertical.appendChild(verticalDot);
+      const verticalLine = document.createElement("hr");
+      verticalLine.style.position = "absolute";
+      verticalLine.style.left = "88.85%";
+      verticalLine.style.right = "-11.72%";
+      verticalLine.style.top = "28.8%";
+      verticalLine.style.bottom = "71.02%";
+      verticalLine.style.background =
+        "linear-gradient(90deg, rgba(210, 143, 67, 0.5) 0%, rgba(80, 47, 10, 0.5) 100%)";
+      verticalLine.style.transform = "rotate(90deg)";
+      vertical.appendChild(verticalLine);
+    </script>
+  </body>
+</html>
