@@ -2,6 +2,8 @@ import react from "react";
 import Imgmake from "./tagmaker/imgmaker";
 import Combine from "./tagmaker/combinecard";
 import Combine2 from "./tagmaker/combinecard2";
+import Divmaker from "./tagmaker/divmaker";
+import Footer from "./tagmaker/footer";
 
 const App: React.FC = () => {
   return (
@@ -13,6 +15,8 @@ const App: React.FC = () => {
       />
       <Combine />
       <Combine2 />
+      <Divmaker classname={"arrow"} />
+      <Footer />
     </div>
   );
 };
