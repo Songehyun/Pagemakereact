@@ -1,6 +1,7 @@
 import react from "react";
 import Imgmake from "./tagmaker/imgmaker";
-import Divmaker from "./tagmaker/divmaker";
+import Combine from "./tagmaker/combinecard";
+import Combine2 from "./tagmaker/combinecard2";
 
 const App: React.FC = () => {
   return (
@@ -10,6 +11,8 @@ const App: React.FC = () => {
         alts={"메인이미지야"}
         classname={"test"}
       />
+      <Combine />
+      <Combine2 />
     </div>
   );
 };

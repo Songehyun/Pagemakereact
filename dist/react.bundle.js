@@ -16,7 +16,7 @@
   \*********************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar imgtagmaker_1 = __importDefault(__webpack_require__(/*! ./tagmaker/imgtagmaker */ \"./src/tagmaker/imgtagmaker.tsx\"));\nvar divmaker_1 = __importDefault(__webpack_require__(/*! ./tagmaker/divmaker */ \"./src/tagmaker/divmaker.tsx\"));\nvar App = function App() {\n  return (0, jsx_runtime_1.jsxs)(\"div\", {\n    children: [(0, jsx_runtime_1.jsx)(imgtagmaker_1[\"default\"], {\n      srcs: \"../img/backimage.jfif\",\n      alts: \"메인이미지야\",\n      classname: \"test\"\n    }), (0, jsx_runtime_1.jsx)(divmaker_1[\"default\"], {\n      classvalue: \"card\",\n      children: (0, jsx_runtime_1.jsx)(imgtagmaker_1[\"default\"], {\n        srcs: \"../img/backimage.jfif\",\n        alts: \"메인이미지야\",\n        classname: \"test\"\n      })\n    })]\n  });\n};\nexports[\"default\"] = App;\n\n//# sourceURL=webpack://reacttest1/./src/app.tsx?");
+eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar imgmaker_1 = __importDefault(__webpack_require__(/*! ./tagmaker/imgmaker */ \"./src/tagmaker/imgmaker.tsx\"));\nvar combinecard_1 = __importDefault(__webpack_require__(/*! ./tagmaker/combinecard */ \"./src/tagmaker/combinecard.tsx\"));\nvar App = function App() {\n  return (0, jsx_runtime_1.jsxs)(\"div\", {\n    children: [(0, jsx_runtime_1.jsx)(imgmaker_1[\"default\"], {\n      srcs: \"../img/backimage.jfif\",\n      alts: \"메인이미지야\",\n      classname: \"test\"\n    }), (0, jsx_runtime_1.jsx)(combinecard_1[\"default\"], {})]\n  });\n};\nexports[\"default\"] = App;\n\n//# sourceURL=webpack://reacttest1/./src/app.tsx?");
 
 /***/ }),
 
@@ -30,23 +30,63 @@ eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {
 
 /***/ }),
 
+/***/ "./src/tagmaker/combinecard.tsx":
+/*!**************************************!*\
+  !*** ./src/tagmaker/combinecard.tsx ***!
+  \**************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar divmaker_1 = __importDefault(__webpack_require__(/*! ./divmaker */ \"./src/tagmaker/divmaker.tsx\"));\nvar hrmaker_1 = __importDefault(__webpack_require__(/*! ./hrmaker */ \"./src/tagmaker/hrmaker.tsx\"));\nvar h2maker_1 = __importDefault(__webpack_require__(/*! ./h2maker */ \"./src/tagmaker/h2maker.tsx\"));\nvar pmaker_1 = __importDefault(__webpack_require__(/*! ./pmaker */ \"./src/tagmaker/pmaker.tsx\"));\nvar Combine = function Combine() {\n  return (0, jsx_runtime_1.jsx)(divmaker_1[\"default\"], {\n    classname: \"card\",\n    children: (0, jsx_runtime_1.jsxs)(divmaker_1[\"default\"], {\n      classname: \"card-container\",\n      children: [(0, jsx_runtime_1.jsx)(hrmaker_1[\"default\"], {\n        classname: \"card-line\"\n      }), (0, jsx_runtime_1.jsx)(h2maker_1[\"default\"], {\n        classname: \"card-title\",\n        children: \"INDENTATION\"\n      }), (0, jsx_runtime_1.jsx)(pmaker_1[\"default\"], {\n        classname: \"card-text\",\n        children: \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis quasi consequatur tempore voluptas explicabo dolorem sed quam cupiditate ipsa non magnam delectus distinctio, nemo ratione, eligendi maxime molestiae quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis quasi consequatur tempore voluptas explicabo dolorem sed quam cupiditate ipsa non magnam delectus distinctio, nemo ratione, eligendi maxime molestiae quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis quasi consequatur tempore voluptas explicabo dolorem sed quam cupiditate ipsa non magnam delectus distinctio, nemo ratione, eligendi maxime molestiae quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis quasi consequatur tempore voluptas explicabo dolorem sed quam cupiditate ipsa non magnam delectus distinctio, nemo ratione, eligendi maxime molestiae quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis quasi consequatur tempore voluptas explicabo dolorem sed quam cupiditate ipsa non magnam delectus distinctio, nemo ratione, eligendi maxime molestiae quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis quasi consequatur tempore voluptas explicabo dolorem sed quam cupiditate ipsa non magnam delectus distinctio, nemo ratione, eligendi maxime molestiae quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis quasi consequatur tempore voluptas explicabo dolorem sed quam cupiditate ipsa non magnam delectus distinctio, nemo ratione, eligendi maxime molestiae quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis quasi consequatur tempore voluptas explicabo dolorem sed quam cupiditate ipsa non magnam delectus distinctio, nemo ratione, eligendi maxime molestiae quae.\"\n      })]\n    })\n  });\n};\nexports[\"default\"] = Combine;\n\n//# sourceURL=webpack://reacttest1/./src/tagmaker/combinecard.tsx?");
+
+/***/ }),
+
 /***/ "./src/tagmaker/divmaker.tsx":
 /*!***********************************!*\
   !*** ./src/tagmaker/divmaker.tsx ***!
   \***********************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Divmaker = function Divmaker(_ref) {\n  var classvalue = _ref.classvalue,\n    children = _ref.children;\n  return (0, jsx_runtime_1.jsx)(\"div\", {\n    className: classvalue,\n    children: children\n  });\n};\nexports[\"default\"] = Divmaker;\n\n//# sourceURL=webpack://reacttest1/./src/tagmaker/divmaker.tsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Divmaker = function Divmaker(_ref) {\n  var classname = _ref.classname,\n    children = _ref.children;\n  return (0, jsx_runtime_1.jsx)(\"div\", {\n    className: classname,\n    children: children\n  });\n};\nexports[\"default\"] = Divmaker;\n\n//# sourceURL=webpack://reacttest1/./src/tagmaker/divmaker.tsx?");
 
 /***/ }),
 
-/***/ "./src/tagmaker/imgtagmaker.tsx":
-/*!**************************************!*\
-  !*** ./src/tagmaker/imgtagmaker.tsx ***!
-  \**************************************/
+/***/ "./src/tagmaker/h2maker.tsx":
+/*!**********************************!*\
+  !*** ./src/tagmaker/h2maker.tsx ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Imgmake = function Imgmake(_ref) {\n  var srcs = _ref.srcs,\n    alts = _ref.alts,\n    classname = _ref.classname;\n  return (0, jsx_runtime_1.jsx)(\"img\", {\n    src: srcs,\n    alt: alts,\n    className: classname\n  });\n};\nexports[\"default\"] = Imgmake;\n\n//# sourceURL=webpack://reacttest1/./src/tagmaker/imgtagmaker.tsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar H2maker = function H2maker(_ref) {\n  var classname = _ref.classname,\n    children = _ref.children;\n  return (0, jsx_runtime_1.jsx)(\"h2\", {\n    className: classname,\n    children: children\n  });\n};\nexports[\"default\"] = H2maker;\n\n//# sourceURL=webpack://reacttest1/./src/tagmaker/h2maker.tsx?");
+
+/***/ }),
+
+/***/ "./src/tagmaker/hrmaker.tsx":
+/*!**********************************!*\
+  !*** ./src/tagmaker/hrmaker.tsx ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Hrmaker = function Hrmaker(_ref) {\n  var classname = _ref.classname;\n  return (0, jsx_runtime_1.jsx)(\"hr\", {\n    className: classname\n  });\n};\nexports[\"default\"] = Hrmaker;\n\n//# sourceURL=webpack://reacttest1/./src/tagmaker/hrmaker.tsx?");
+
+/***/ }),
+
+/***/ "./src/tagmaker/imgmaker.tsx":
+/*!***********************************!*\
+  !*** ./src/tagmaker/imgmaker.tsx ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Imgmake = function Imgmake(_ref) {\n  var srcs = _ref.srcs,\n    alts = _ref.alts,\n    classname = _ref.classname;\n  return (0, jsx_runtime_1.jsx)(\"img\", {\n    src: srcs,\n    alt: alts,\n    className: classname\n  });\n};\nexports[\"default\"] = Imgmake;\n\n//# sourceURL=webpack://reacttest1/./src/tagmaker/imgmaker.tsx?");
+
+/***/ }),
+
+/***/ "./src/tagmaker/pmaker.tsx":
+/*!*********************************!*\
+  !*** ./src/tagmaker/pmaker.tsx ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Pmaker = function Pmaker(_ref) {\n  var classname = _ref.classname,\n    children = _ref.children;\n  return (0, jsx_runtime_1.jsx)(\"h2\", {\n    className: classname,\n    children: children\n  });\n};\nexports[\"default\"] = Pmaker;\n\n//# sourceURL=webpack://reacttest1/./src/tagmaker/pmaker.tsx?");
 
 /***/ }),
 
